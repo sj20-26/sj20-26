@@ -1,17 +1,338 @@
-<section id="resume">
-    <h2>Resume</h2>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="resume">
+    <title>Shweta Jain | Instructional Designer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f7f9fc;
+        }
+
+        header {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            color: #1769aa;
+            font-size: 2.7rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #555;
+            font-size: 1.15rem;
+        }
+
+        nav {
+            background: #1769aa;
+            text-align: center;
+            padding: 14px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #1769aa;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .intro {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            font-size: 1.15rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .project h3 {
+            color: #1769aa;
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            margin-bottom: 15px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #1769aa;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #125487;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 1px solid #d5dce5;
+        }
+
+        .resume {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        footer {
+            background: #1769aa;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        a {
+            color: #1769aa;
+        }
+
+        footer a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Shweta Jain</h1>
+    <p>Instructional Designer | Curriculum Developer | E-Learning Designer</p>
+</header>
+
+<nav>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#approach">Approach</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <section class="intro">
         <p>
-            View or download my current resume.
+            Educator and curriculum developer transitioning into instructional
+            design, with 9+ years of experience designing learner-centered
+            instruction, developing curriculum, creating instructional materials,
+            and using assessment data to improve learning outcomes.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>AssureGuard – Policy Verification Simulation</h3>
+
+                <p>
+                    An interactive insurance-workflow simulation in which learners
+                    verify customer and policy information, confirm policy details,
+                    document the customer interaction, and select the appropriate
+                    action.
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    Scenario-based learning, interactive decision-making,
+                    simulated workflows, triggers, layers, and feedback design.
+                </p>
+
+                <a class="button"
+                   href="https://glowing-hamster-647346.netlify.app/story.html"
+                   target="_blank">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Chemical Safety Simulation</h3>
+
+                <p>
+                    An interactive chemical-safety learning experience designed
+                    around realistic scenarios, learner decision-making, and
+                    immediate feedback.
+                </p>
+
+                <p>
+                    <strong>Skills:</strong>
+                    Scenario-based learning, decision-making, interactive
+                    learning, feedback, and Storyline 360.
+                </p>
+
+                <a class="button"
+                   href="https://singular-belekoy-df6971.netlify.app/"
+                   target="_blank">
+                    View Project
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am an educator and curriculum developer with a background in
+            Chemistry, Biology, and Life Science. Throughout my teaching career,
+            I have designed learner-centered instruction, developed curriculum
+            and instructional materials, and created resources for pre-medical
+            and pre-engineering learners.
         </p>
 
         <br>
 
-        <a class="button"
-           href="Shweta_Jain cd.pdf"
-           target="_blank">
-            View Resume
-        </a>
-    </div>
-</section>
+        <p>
+            I am now applying this experience to instructional design and
+            e-learning, with a focus on creating engaging, practical, and
+            interactive learning experiences.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <span class="skill">Instructional Design</span>
+            <span class="skill">Scenario-Based Learning</span>
+            <span class="skill">Learning Objectives</span>
+            <span class="skill">Assessment Design</span>
+            <span class="skill">Curriculum Development</span>
+            <span class="skill">Storyline 360</span>
+            <span class="skill">Interactive Simulations</span>
+            <span class="skill">Triggers &amp; Layers</span>
+            <span class="skill">Decision-Based Interactions</span>
+            <span class="skill">Feedback Design</span>
+            <span class="skill">Google Data Analytics</span>
+            <span class="skill">Data-Driven Decision Making</span>
+            <span class="skill">Microsoft Office</span>
+            <span class="skill">Chemistry</span>
+            <span class="skill">Biology</span>
+            <span class="skill">Life Science</span>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education &amp; Credentials</h2>
+
+        <p><strong>Master of Science – Chemistry</strong></p>
+        <p><strong>Bachelor of Secondary Education – Life Sciences</strong></p>
+        <p><strong>Bachelor of Science – Microbiology</strong></p>
+        <p><strong>Google Data Analytics Certificate</strong></p>
+    </section>
+
+    <section id="approach">
+        <h2>Instructional Design Approach</h2>
+
+        <p>
+            My instructional design approach combines clear learning objectives,
+            realistic scenarios, active learner participation, meaningful
+            practice, and immediate feedback. I focus on creating learning
+            experiences that help learners apply knowledge rather than simply
+            recall information.
+        </p>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+
+        <div class="resume">
+            <p>
+                View or download my current resume.
+            </p>
+
+            <br>
+
+            <a class="button"
+               href="Shweta_Jain_Resume.pdf"
+               target="_blank">
+                View Resume
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+            Email:
+            <a href="mailto:jainshweta2015@gmail.com">
+                jainshweta2015@gmail.com
+            </a>
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Shweta Jain | Instructional Design Portfolio</p>
+</footer>
+
+</body>
+</html>
+```
