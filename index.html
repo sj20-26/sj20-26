@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>[YOUR NAME] | Instructional Designer</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #263238;
+      background: #f7f9fb;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 70px 20px 60px;
+      text-align: center;
+      border-bottom: 1px solid #e1e6ea;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+      color: #17324d;
+    }
+
+    header h2 {
+      font-size: 22px;
+      font-weight: 400;
+      color: #526675;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 17px;
+      color: #52606b;
+    }
+
+    nav {
+      background: #17324d;
+      text-align: center;
+      padding: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 65px 20px;
+    }
+
+    section h2 {
+      font-size: 30px;
+      color: #17324d;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+      color: #52606b;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    .project {
+      background: white;
+      padding: 32px;
+      border-radius: 10px;
+      border: 1px solid #e0e6eb;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .project h3 {
+      color: #17324d;
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      color: #52606b;
+      margin-bottom: 18px;
+    }
+
+    .project ul {
+      margin: 0 0 25px 20px;
+      color: #52606b;
+    }
+
+    .project li {
+      margin-bottom: 7px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #17324d;
+      color: white;
+      padding: 11px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #274d70;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .skill-box {
+      background: white;
+      padding: 25px;
+      border: 1px solid #e0e6eb;
+      border-radius: 8px;
+    }
+
+    .skill-box h3 {
+      color: #17324d;
+      margin-bottom: 12px;
+    }
+
+    .skill-box ul {
+      margin-left: 18px;
+      color: #52606b;
+    }
+
+    .about {
+      background: white;
+      border-top: 1px solid #e1e6ea;
+      border-bottom: 1px solid #e1e6ea;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: auto;
+      color: #52606b;
+      font-size: 17px;
+    }
+
+    .about-content p {
+      margin-bottom: 18px;
+    }
+
+    .education {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .education-item {
+      background: white;
+      padding: 18px 22px;
+      margin-bottom: 12px;
+      border-left: 4px solid #17324d;
+      border-radius: 4px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      background: #17324d;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      header h2 {
+        font-size: 19px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>[YOUR NAME]</h1>
+    <h2>Instructional Designer | Curriculum Developer | E-Learning Designer</h2>
+
+    <p>
+      Educator and curriculum developer transitioning into instructional design,
+      with 9+ years of experience designing learner-centered instruction,
+      developing curriculum, creating instructional materials, and using
+      assessment data to improve learning outcomes.
+    </p>
+  </header>
+
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="projects">
+
+    <h2>Featured Projects</h2>
+
+    <div class="projects">
+
+      <div class="project">
+        <h3>AssureGuard – Policy Verification Simulation</h3>
+
+        <p>
+          An interactive insurance-workflow simulation designed to place
+          learners in a realistic customer-service scenario. The learner
+          verifies customer and policy information, confirms the homeowner's
+          policy and deductible, documents the interaction, and makes the
+          appropriate policy decision.
+        </p>
+
+        <ul>
+          <li>Scenario-based learning</li>
+          <li>Interactive decision-making</li>
+          <li>Simulated workflow environment</li>
+          <li>Triggers, layers, and feedback</li>
+          <li>Learner verification and decision-making</li>
+        </ul>
+
+        <a class="button" href="[ASSUREGUARD LINK]" target="_blank">
+          View Project
+        </a>
+      </div>
+
+
+      <div class="project">
+        <h3>Chemical Safety Simulation</h3>
+
+        <p>
+          An interactive chemical-safety learning experience designed to
+          help learners apply safety knowledge through realistic situations,
+          decisions, and feedback rather than passive information delivery.
+        </p>
+
+        <ul>
+          <li>Scenario-based learning</li>
+          <li>Interactive decision-making</li>
+          <li>Safety-focused instruction</li>
+          <li>Feedback and reinforcement</li>
+          <li>Articulate Storyline development</li>
+        </ul>
+
+        <a class="button" href="[CHEMICAL SAFETY LINK]" target="_blank">
+          View Project
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="about" class="about">
+
+    <h2>About Me</h2>
+
+    <div class="about-content">
+
+      <p>
+        I began my career in science education and curriculum development,
+        building a strong foundation in instructional planning, learner
+        engagement, assessment, and content development.
+      </p>
+
+      <p>
+        Over 9+ years in education, I have taught Chemistry, Biology, and
+        Life Science and developed instructional materials and curriculum
+        for science learners, including materials supporting pre-medical
+        and pre-engineering preparation.
+      </p>
+
+      <p>
+        My experience has taught me how to identify learning needs,
+        break complex concepts into manageable learning experiences,
+        design learner-centered instruction, develop assessments aligned
+        with learning objectives, and use data to identify areas for
+        improvement.
+      </p>
+
+      <p>
+        I am now applying these skills to instructional design and
+        e-learning development, with a particular interest in interactive,
+        scenario-based learning.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skills">
+
+      <div class="skill-box">
+        <h3>Instructional Design</h3>
+        <ul>
+          <li>Learner-centered design</li>
+          <li>Scenario-based learning</li>
+          <li>Learning objectives</li>
+          <li>Assessment design</li>
+          <li>Curriculum development</li>
+          <li>Instructional content development</li>
+        </ul>
+      </div>
+
+      <div class="skill-box">
+        <h3>E-Learning Development</h3>
+        <ul>
+          <li>Articulate Storyline 360</li>
+          <li>Interactive simulations</li>
+          <li>Triggers and layers</li>
+          <li>Decision-based interactions</li>
+          <li>Feedback design</li>
+          <li>Scenario development</li>
+        </ul>
+      </div>
+
+      <div class="skill-box">
+        <h3>Data & Technology</h3>
+        <ul>
+          <li>Google Data Analytics</li>
+          <li>Data-driven decision making</li>
+          <li>Learning analytics concepts</li>
+          <li>Microsoft Office</li>
+          <li>Digital learning tools</li>
+        </ul>
+      </div>
+
+      <div class="skill-box">
+        <h3>Science & Curriculum</h3>
+        <ul>
+          <li>Chemistry</li>
+          <li>Biology</li>
+          <li>Life Science</li>
+          <li>Science curriculum development</li>
+          <li>Educational content development</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="education">
+
+    <h2>Education & Credentials</h2>
+
+    <div class="education">
+
+      <div class="education-item">
+        <strong>Master of Science – Chemistry</strong>
+      </div>
+
+      <div class="education-item">
+        <strong>Bachelor of Secondary Education – Life Sciences</strong>
+      </div>
+
+      <div class="education-item">
+        <strong>Bachelor of Science – Microbiology</strong>
+      </div>
+
+      <div class="education-item">
+        <strong>Google Data Analytics Certificate</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <h2>My Instructional Design Approach</h2>
+
+    <div class="about-content">
+
+      <p>
+        <strong>Start with the learner.</strong>
+        Instruction should be designed around what the learner needs to
+        accomplish, not simply the information that needs to be presented.
+      </p>
+
+      <p>
+        <strong>Make learning practical.</strong>
+        Realistic situations, decisions, and problems give learners
+        opportunities to apply what they have learned.
+      </p>
+
+      <p>
+        <strong>Use feedback to support learning.</strong>
+        Effective feedback helps learners understand what they did,
+        why it was or was not correct, and what they should do next.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <section id="contact" class="contact">
+
+    <h2>Resume & Contact</h2>
+
+    <p class="intro">
+      I am interested in opportunities in instructional design,
+      e-learning development, curriculum development, and learning
+      experience design.
+    </p>
+
+    <br>
+
+    <a class="button" href="[RESUME LINK]" target="_blank">
+      View Resume
+    </a>
+
+    <br><br>
+
+    <p>
+      Email:
+      <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a>
+    </p>
+
+    <p>
+      LinkedIn:
+      <a href="[LINKEDIN URL]" target="_blank">View LinkedIn</a>
+    </p>
+
+  </section>
+
+
+  <footer>
+    <p>© 2026 [YOUR NAME]. Instructional Design Portfolio.</p>
+  </footer>
+
+</body>
+</html>
